@@ -1,0 +1,25 @@
+# read
+data = open('./sampleFile.txt', mode="r")
+print(data.read(5))
+print("---")
+print(data.read())
+print("")
+print("---")
+print("")
+dataFile = open('./sampleFile.txt', mode="r", encoding="utf-8")
+txtFile = dataFile.read()
+print(txtFile)
+txtFileChange = txtFile.replace("adalah","merupakan")
+print(txtFileChange)
+
+#append (menambahkan text pada file tersebut)
+dataFile2 = open('./sampleFile.txt', mode="a", encoding="utf-8")
+dataFile2.write("\nBelajar python")
+dataFile2.write("\nGas gas gas!")
+
+dataFile2.close()
+
+#write (melakukan re-write atau menulis ulang kembali)
+dataFile3 = open('./sampleFile.txt', mode="w", encoding="utf-8")
+dataFile3.write("\nTest write file")
+dataFile3.close()
