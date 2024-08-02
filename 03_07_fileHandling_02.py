@@ -6,4 +6,6 @@ finally:
 # Best practice
 with open('./sampleFile.txt', mode="w", encoding="utf-8") as f:
     # code 
-    pass
+    f.read()
+    f.write()
+    f.write()
